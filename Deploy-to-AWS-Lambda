@@ -1,0 +1,6 @@
+                                                                                                         
+        - name: Update Lambda function                                                                     
+          run: |                                                                                           
+            aws lambda update-function-code \                                                              
+              --function-name dashboard-mix-lambda \                                                       
+              --image-uri ${{ steps.login-ecr.outputs.registry }}/dashboard-mix-producao:latest
