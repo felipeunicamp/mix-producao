@@ -1,0 +1,2 @@
+            --function-name dashboard-mix-lambda \                                                       
+              --image-uri ${{ steps.login-ecr.outputs.registry }}/dashboard-mix-producao:latest
